@@ -38,7 +38,7 @@ exports.handler = async function (event) {
         "Authorization": `Bearer ${GROQ_API_KEY}`,
       },
       body: JSON.stringify({
-        model: "llama-3.3-70b-versatile",
+        model: "qwen/qwen3.6-27b",
         max_tokens: 1024,
         temperature: 0.1,
         messages: [

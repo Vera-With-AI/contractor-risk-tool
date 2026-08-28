@@ -32,7 +32,7 @@ exports.handler = async function (event) {
         "Authorization": `Bearer ${GROQ_API_KEY}`,
       },
       body: JSON.stringify({
-        model: "qwen/qwen3.6-27b",
+        model: "openai/gpt-oss-20b",
         max_tokens: 1024,
         temperature: 0.1,
         messages: [

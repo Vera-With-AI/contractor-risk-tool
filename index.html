@@ -696,7 +696,7 @@ async function analyze() {
   document.getElementById('resultSection').classList.remove('show');
 
   try {
-    const res = await fetch('/.netlify/functions/analyze', {
+    const res = await fetch('/analyze', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ situation, store }),
